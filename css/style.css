@@ -1,4 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;500;700&display=swap');
+
 * {
+    font-family: 'Roboto Mono', monospace;
     margin: 0;
     padding: 0;
 }
@@ -148,7 +151,7 @@ img {
 /* reviews */
 
 .reviews {
-    background: antiquewhite;
+    background: url(https://images.pexels.com/photos/844297/pexels-photo-844297.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260) 100%/100%;
     padding-top: 30px;
     padding-bottom: 40px;
 }
@@ -263,11 +266,19 @@ img {
     margin-right: auto
 }
 .form__form {
-    grid-column-start: 2;
-    grid-column-end: 3;
-    grid-row-start: 1;
-    grid-row-end: 3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px;
+    background: #FBE7C6;
+    border-radius: 13px;
     
+}
+input {
+    padding: 10px;
+    width: 300px;
+    margin-top: 20px;
 }
 .form__priсes {
     padding-top: 30px;
@@ -293,7 +304,7 @@ img {
 .form__text {
     padding: 20px;
     text-align: right;
-    font-style: 16px;
+    font-size: 30px;
     font-weight: 700;
 }
 .form__btn {
